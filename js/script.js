@@ -1,7 +1,3 @@
-// navbar toggle function
-const toggleButton = document.querySelector('#toggle-button');
-const navLinks = document.querySelector('.nav-links');
-
-toggleButton.addEventListener('click', () => {
-    navLinks.classList.toggle('active');
+$('#toggle-button').click(function(event){
+     
 })
