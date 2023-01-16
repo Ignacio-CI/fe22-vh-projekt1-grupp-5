@@ -134,6 +134,11 @@ p {
   line-height: 1.5;
 }
 
+/* toggle function */
+ul.active {
+  display: none;
+}
+
 @media screen and (min-width: 800px) {
   nav ul li a {
     display: block;
