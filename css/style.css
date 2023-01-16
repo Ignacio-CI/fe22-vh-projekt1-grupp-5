@@ -209,6 +209,7 @@ ul.active {
 
   #home-text-container p {
     color: rgb(100, 100, 100);
+    font-weight: 300;
   }
 
   #home-container img {
@@ -216,7 +217,7 @@ ul.active {
     grid-row: 1 / 2;
     align-self: center;
     justify-self: center;
-    width: 70%;
+    width: 80%;
     height: 100%;
   }
 }
