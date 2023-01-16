@@ -1,35 +1,46 @@
 * {
-    box-sizing: border-box;
-    margin: 5px;
-    padding: 0;
-    border: 0;
+  box-sizing: border-box;
+  margin: 5px;
+  padding: 0;
+  border: 0;
 }
 
 nav {
-    width: 100%;
-    height: 64px;
-    display: flex;
-    align-items: center;
-    background-color: #006285;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: #006285;
+}
+
+#brand-title {
+  font-size: 1.5rem;
+  margin: 16px;
+  color: rgb(235, 235, 235);
 }
 
 ul {
-    width: inherit;
-    height: inherit;
-    list-style: none;  
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+  display: none;
+  width: inherit;
+  height: inherit;
+  list-style: none;
+}
+
+nav ul li {
+  text-align: center;
+  padding: 0.5rem;
 }
 
 nav ul li a {
-    text-decoration: none;
-    color: rgb(235, 235, 235);
+  width: 100%;
+  text-decoration: none;
+  color: rgb(235, 235, 235);
 }
 
 #toggle-button {
   position: absolute;
-  top: .75rem;
+  top: 16px;
   right: 1rem;
   display: flex;
   flex-direction: column;
@@ -38,8 +49,15 @@ nav ul li a {
   height: 24px;
 }
 
+#toggle-button .bar {
+  height: 4px;
+  width: 100%;
+  background-color: white;
+  border-radius: 12px;
+}
+
 #home-container {
-  margin: 64px 16px;
+  margin: 32px 16px;
   width: 100%;
   height: 50vh;
   display: flex;
@@ -112,6 +130,31 @@ p {
   line-height: 1.5;
 }
 
-@media screen and (min-width: 800px) {
+/* toggle function */
+ul.active {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
 
+@media screen and (min-width: 800px) {
+  nav {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  nav ul li a {
+    display: block;
+  }
+
+  #toggle-button {
+    display: none;
+  }
 }
