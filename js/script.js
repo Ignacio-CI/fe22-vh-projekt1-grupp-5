@@ -1,3 +1,7 @@
-$('#toggle-button').click(function(event){
-     
-})
+$(() => {
+
+    $('.nav-links').click((e) => {
+        console.log("test");
+    });
+
+});

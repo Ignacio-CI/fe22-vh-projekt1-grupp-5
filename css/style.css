@@ -55,13 +55,6 @@ nav ul li a {
   height: 24px;
 }
 
-#toggle-button .bar {
-  height: 4px;
-  width: 100%;
-  background-color: white;
-  border-radius: 12px;
-}
-
 #home-container {
   margin: 16px 0px;
   width: 100%;
