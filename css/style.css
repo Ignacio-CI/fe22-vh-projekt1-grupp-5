@@ -15,14 +15,15 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
-
+  background-image: linear-gradient(to top, #48c6ef 0%, #6f86d6 100%);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 #brand-title {
+  width: 100%;
   font-size: 1.5rem;
   margin: 16px;
-  color: rgb(235, 235, 235);
+  color: rgb(255, 255, 255);
 }
 
 ul {
@@ -40,12 +41,12 @@ nav ul li {
 nav ul li a {
   width: 100%;
   text-decoration: none;
-  color: rgb(235, 235, 235);
+  color: rgb(255, 255, 255);
 }
 
 #toggle-button {
   position: absolute;
-  top: 16px;
+  top: 22px;
   right: 1rem;
   display: flex;
   flex-direction: column;
