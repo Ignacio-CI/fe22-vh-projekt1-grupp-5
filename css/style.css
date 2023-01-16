@@ -27,6 +27,17 @@ nav ul li a {
     color: rgb(235, 235, 235);
 }
 
+#toggle-button {
+  position: absolute;
+  top: .75rem;
+  right: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 32px;
+  height: 24px;
+}
+
 #home-container {
   margin: 64px 16px;
   width: 100%;
