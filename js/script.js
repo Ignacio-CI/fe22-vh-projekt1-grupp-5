@@ -1,5 +1,5 @@
 $(()=>{
-    $('#btn').click(function(event){
+    $('#weather-app-btn').click(function(event){
         event.preventDefault();
         let cityInput = $('#city-input').val();
 

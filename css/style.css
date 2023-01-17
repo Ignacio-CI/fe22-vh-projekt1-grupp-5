@@ -196,7 +196,7 @@ textarea{
   width: 70rem;
 }
 
-.card-container div {
+.card-container .card {
   width: 25rem;
   height: 13rem;
   border-radius: 0.8rem;
@@ -205,6 +205,22 @@ textarea{
   color: white;
   text-shadow: black;
   font-family: 'Poppins', sans-serif;
+}
+
+.card {
+  display: flex;
+  padding-top: 1.5rem;
+  justify-content: space-around;
+}
+
+.card .headers {
+  width: 12rem;
+}
+
+.card img {
+  width:18%;
+  height: 40%;
+  object-fit: contain;
 }
 
 @media screen and (min-width: 800px) {
