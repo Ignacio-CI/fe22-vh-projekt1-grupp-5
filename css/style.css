@@ -57,13 +57,14 @@ nav ul li a {
 }
 
 #about-container {
-  margin: 16px 0px;
-  width: 100%;
-  height: 50vh;
   display: flex;
-  flex-flow: column wrap;
   align-items: center;
-  justify-content: center;
+  
+}
+
+#home-container img {
+  width: 20rem;
+ 
 }
 
 #toggle-button .bar {
@@ -149,6 +150,7 @@ p {
   font-size: 18px;
   line-height: 1.5;
 }
+
 #contact-form{
   display: flex;
   flex-direction: column;
@@ -157,16 +159,19 @@ p {
   border-radius: 12px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
+
 input{
   border-radius: 4px;
   width: 80%;
   height: 20%;
 }
+
 textarea{
   border-radius: 4px;
   width: 80%;
   height: 20%;
 }
+
 #contact-form-button{
   margin-top: 15px;
   border-radius: 8px;
@@ -179,7 +184,32 @@ ul.active {
   justify-content: space-evenly;
 }
 
-@media screen and (min-width: 800px) {
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.card-container {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+  width: 70rem;
+}
+
+.card-container div {
+  width: 25rem;
+  height: 13rem;
+  border-radius: 0.8rem;
+  background: linear-gradient(180deg, #68678a, #807FA4, #C5C3FF);
+  margin: 2rem;
+  color: white;
+  text-shadow: black;
+  font-family: 'Poppins', sans-serif;
+}
+
+@media screen and (min-width: 1400px) {
   nav {
     flex-direction: row;
     align-items: center;
@@ -213,22 +243,24 @@ ul.active {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
   }
-
+  
   #about-text-container h1 {
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
     font-size: 3.5rem;
     color: hsl(0, 0%, 20%);
     font-weight: 800;
     font-size: 50px;
-    place-self: start center;
+  }
+
+  .container {
+    height: 95vh;
+ 
   }
 
   #about-container:nth-child(2) {
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
+
     font-size: 1.4rem;
-    place-self: center center;
+   
+    border: 1px solid black;
   }
 
   #about-text-container p {
@@ -238,12 +270,8 @@ ul.active {
   }
 
   #about-container img {
-    grid-column: 2 / 3;
-    grid-row: 1 / 2;
-    align-self: center;
-    justify-self: center;
-    width: 80%;
-    height: 100%;
+    width: 50rem;
+   
   }
 
   /* App page */
