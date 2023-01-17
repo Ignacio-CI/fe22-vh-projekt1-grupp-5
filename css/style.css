@@ -112,6 +112,8 @@ button a {
 
 #weather-output {
   font-size: 18px;
+  display: flex;
+  justify-content: center;
 }
 
 h1 {
@@ -186,7 +188,7 @@ textarea{
   display: flex;
   align-items: center;
   justify-content: center;
-
+  padding-bottom: 5rem;
 }
 
 .card-container {
@@ -273,8 +275,7 @@ textarea{
   }
 
   .container {
-    height: 95vh;
- 
+    height: 85vh;
   }
 
   #about-container:nth-child(2) {
