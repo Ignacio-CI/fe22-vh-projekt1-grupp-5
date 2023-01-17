@@ -342,3 +342,13 @@ textarea{
     align-self: stretch;
   }
 }
+
+
+footer{
+  position: fixed;
+  bottom: 0;
+ height: 5rem;
+ width: 100%;
+ background-image: linear-gradient(to top, #48c6ef 0%, #6f86d6 100%);
+ box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
