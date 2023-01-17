@@ -55,7 +55,7 @@ nav ul li a {
   height: 24px;
 }
 
-#home-container {
+#about-container {
   margin: 16px 0px;
   width: 100%;
   height: 50vh;
@@ -112,14 +112,6 @@ button a {
 
 #weather-output {
   font-size: 18px;
-}
-
-#about-page {
-  width: 500px;
-  margin: 0 auto;
-  text-align: center;
-  font-size: 18px;
-  line-height: 1.5;
 }
 
 h1 {
@@ -186,7 +178,7 @@ ul.active {
     display: none;
   }
 
-  #home-container {
+  #about-container {
     /* border: 1px solid red;
     background-color: rgb(210, 210, 210); */
     margin-top: 64px;
@@ -198,7 +190,7 @@ ul.active {
     grid-template-rows: 1fr;
   }
 
-  #home-text-container h1 {
+  #about-text-container h1 {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
     font-size: 3.5rem;
@@ -208,20 +200,20 @@ ul.active {
     place-self: start center;
   }
 
-  #home-container:nth-child(2) {
+  #about-container:nth-child(2) {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
     font-size: 1.4rem;
     place-self: center center;
   }
 
-  #home-text-container p {
+  #about-text-container p {
     color: rgb(100, 100, 100);
     font-weight: 300;
     font-size: 20px;
   }
 
-  #home-container img {
+  #about-container img {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
     align-self: center;
