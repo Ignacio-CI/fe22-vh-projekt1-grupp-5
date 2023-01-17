@@ -350,6 +350,7 @@ textarea{
   }
 }
 
+/*footer / logo*/
 
 footer{
   position: fixed;
@@ -373,4 +374,9 @@ text-align: center;
   background: #007bb5;  
   color: white;  
  
+}  
+
+.fa-twitter {  
+  background: #55ACEE;  
+  color: white;  
 }  

@@ -19,7 +19,7 @@ $(()=>{
                 $(`#card${index} .headers h2`).text(element.name);
                 $(`#card${index} img`).attr('src',`http://openweathermap.org/img/wn/${element.weather[0].icon}@4x.png`);
                 $(`#card${index} .headers p`).text(element.weather[0].main);
-                $(`#card${index} h3`).text(Math.round(element.main.temp) + " °C");
+                $(`#card${index} h3`).text(Math.round(element.main.temp) + "°");
             });
         }) 
 })
