@@ -22,10 +22,10 @@ $(()=>{
                 $(`#card${index} h3`).text(Math.round(element.main.temp) + "°");
             });
         }) 
-})
 
-$('#toggle-button').click(() => {
-    $('.nav-links').toggleClass('active');
+    $('#toggle-button').click(() => {
+        $('.nav-links').toggleClass('active');
+    })
 })
 
 
