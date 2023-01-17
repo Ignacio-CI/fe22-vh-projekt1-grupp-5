@@ -251,9 +251,6 @@ textarea{
   #toggle-button {
     display: none;
   }
-}
-
-@media screen and (min-width: 1400px) {
 
   /* about site */
 
@@ -274,15 +271,8 @@ textarea{
     font-size: 50px;
   }
 
-  .container {
-    height: 85vh;
-  }
-
   #about-container:nth-child(2) {
-
     font-size: 1.4rem;
-   
-    border: 1px solid black;
   }
 
   #about-text-container p {
@@ -292,9 +282,18 @@ textarea{
   }
 
   #about-container img {
-    width: 50rem;
-   
+    width: 40rem;
   }
+}
+
+@media screen and (min-width: 1400px) {
+  
+  /* Home page */
+  .container {
+    height: 85vh;
+  }
+
+  
 
   /* App page */
 
