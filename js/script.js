@@ -11,7 +11,9 @@ $(()=>{
     })
 })
 
+const toggleButton = document.querySelector('#toggle-button');
+const navLinks = document.querySelector('.nav-links');
 
-// toggle button
-
-$('')
+toggleButton.addEventListener('click', () => {
+    navLinks.classList.toggle('active')
+})
