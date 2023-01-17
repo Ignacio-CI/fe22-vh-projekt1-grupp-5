@@ -198,7 +198,7 @@ ul.active {
   width: 70rem;
 }
 
-.card-container div {
+.card-container .card {
   width: 25rem;
   height: 13rem;
   border-radius: 0.8rem;
@@ -208,6 +208,17 @@ ul.active {
   text-shadow: black;
   font-family: 'Poppins', sans-serif;
 }
+
+.card {
+  display: flex;
+  padding-top: 1.5rem;
+  justify-content: space-around;
+}
+
+.card .headers {
+  width: 12rem;
+}
+
 
 @media screen and (min-width: 1400px) {
   nav {
