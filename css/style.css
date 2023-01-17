@@ -219,6 +219,11 @@ ul.active {
   width: 12rem;
 }
 
+.card img {
+  width:18%;
+  height: 40%;
+  object-fit: contain;
+}
 
 @media screen and (min-width: 1400px) {
   nav {
