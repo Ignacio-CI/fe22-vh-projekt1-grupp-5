@@ -18,7 +18,7 @@ $(()=>{
             $(`#card0 h3`).text(Math.round(data.main.temp) + "°");
             $('#card0 h4').text(Math.round(data.main.feels_like));
         }).fail((jqXHR, textStatus, errorThrown) => {
-            console.log(jqXHR, textStatus, errorThrown)
+            // console.log(jqXHR, textStatus, errorThrown)
             alert("City not found. Please enter a valid city name.")
             return
         });
