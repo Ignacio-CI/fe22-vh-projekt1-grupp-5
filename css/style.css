@@ -95,6 +95,7 @@ button {
   color: white;
   border: none;
   cursor: pointer;
+  transition: all .1s ease;
 }
 
 button a {
@@ -130,14 +131,14 @@ p {
   width: 90vw;
   margin: 1rem;
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: wrap;
   align-items: center;
   justify-content: center;
   text-align: center;
 }
 
 #about-container img {
-  width: 50%;
+  width: 80%;
 }
 
 /* Contact Page */
@@ -259,6 +260,7 @@ nav ul li a:hover {
 button:hover {
   background-color: #1faf23;
   color: #303030;
+  transform: scale(1.025);
 }
 
 
@@ -316,7 +318,8 @@ button:hover {
   }
 
   #about-container img {
-    width: 30rem;
+    width: 35rem;
+    justify-self: center;
   }
 }
 
