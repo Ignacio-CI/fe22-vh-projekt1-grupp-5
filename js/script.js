@@ -11,11 +11,12 @@ $(()=>{
         let apiUrl = `http://api.openweathermap.org/data/2.5/weather?q=${cityInput}&units=metric&appid=8de34fe193f5396bc8ece49b21d39f05`
         $.getJSON(apiUrl, { 
         }).done((data) => {
-            console.log(data)
+            console.log(data);
             $('#card0 h2').text(data.name)
             $(`#card0 img`).attr('src',`http://openweathermap.org/img/wn/${data.weather[0].icon}@4x.png`);
             $(`#card0 .headers p`).text(data.weather[0].main);
-            $(`#card0 h3`).text(Math.round(data.main.temp) + "°")
+            $(`#card0 h3`).text(Math.round(data.main.temp) + "°");
+            $('#card0 h4').text(Math.round(data.main.feels_like));
         }).fail((jqXHR, textStatus, errorThrown) => {
             console.log(jqXHR, textStatus, errorThrown)
             alert("City not found. Please enter a valid city name.")
@@ -27,7 +28,7 @@ $(()=>{
         $.getJSON(apiUrl, { 
         }).done((data) => {
             let country = data.list;
-            //  console.log(data);
+            console.log(data);
             country.forEach((element, index) => {
                 $(`#card${index} .headers h2`).text(element.name);
                 $(`#card${index} img`).attr('src',`http://openweathermap.org/img/wn/${element.weather[0].icon}@4x.png`);
