@@ -1,63 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="../css/style.css" />
+    <script src="../js/script.js" defer></script>
+    <title>Weather App</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap"
-    rel="stylesheet" />
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-  <link rel="stylesheet" href="../css/style.css" />
-  <script src="../js/script.js" defer></script>
-  <title>Weather App</title>
-</head>
+  <body>
+    <nav>
+      <div id="brand-title">Weather App</div>
+      <a href="#" id="toggle-button">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="./app.html">Weather App</a></li>
+        <li><a href="./about.html">About</a></li>
+        <li><a href="./contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+    <h1>Weather App</h1>
 
-<body>
-  <nav>
-    <div id="brand-title">Weather App</div>
-    <a href="#" id="toggle-button">
-      <span class="bar"></span>
-      <span class="bar"></span>
-      <span class="bar"></span>
-    </a>
-    <ul class="nav-links">
-      <li><a href="../index.html">Home</a></li>
-      <li><a href="./app.html">Weather App</a></li>
-      <li><a href="./about.html">About</a></li>
-      <li><a href="./contact.html">Contact Us</a></li>
-    </ul>
-  </nav>
-  <h1>Weather App</h1>
-
-  <div id="weather-app">
-    <div id="weather-output">
-      <div class="card-container">
-        <div class="card" id="card0">
-          <img src="../imgs/weather_icon_0.png" alt="">
-          <div class="headers">
-            <h2>--</h2>
-            <p>--</p>
+    <div id="weather-app">
+      <div id="weather-output">
+        <div class="card-container">
+          <div class="card" id="card0">
+            <img src="../imgs/weather_icon_0.png" alt="" />
+            <div class="headers">
+              <h2>--</h2>
+              <p>--</p>
+            </div>
+            <h3>--</h3>
           </div>
-          <h3>--</h3>
-
         </div>
       </div>
+      <form>
+        <label for="city-input">City:</label>
+        <input
+          type="text"
+          id="city-input"
+          name="city-input"
+          placeholder="Madrid, London, ..."
+        />
+        <button id="weather-app-btn" type="submit ">Get Weather</button>
+      </form>
     </div>
-    <form>
-      <label for="city-input">City:</label>
-      <input type="text" id="city-input" name="city-input" placeholder="Madrid, London, ..." />
-      <button id="weather-app-btn" type="submit ">Get Weather</button>
-    </form>
-  </div>
-  <footer>
-    <a href="#" class="fa fa-linkedin"> </a>
-    <a href="#" class="fa fa-twitter"></a>
-    <i class="fa fa-github" style="font-size:42px;color:rgb(6, 6, 6)"></i>
-  </footer>
-</body>
-
+    <footer>
+      <a href="#" class="fa fa-linkedin"> </a>
+      <a href="#" class="fa fa-twitter"></a>
+      <i class="fa fa-github" style="font-size: 42px; color: rgb(6, 6, 6)"></i>
+    </footer>
+  </body>
 </html>
