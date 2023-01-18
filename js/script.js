@@ -17,8 +17,8 @@ $(()=>{
             $(`#card0 .headers p`).text(data.weather[0].main);
             $(`#card0 h3`).text(Math.round(data.main.temp) + "°");
             $('#card0 #feels-like').text(Math.round(data.main.feels_like) + "°");
-            $('#card0 #temp-max').text(Math.round(data.main.temp_max) + "°");
-            $('#card0 #temp-min').text(Math.round(data.main.temp_min) + "°");
+            $('#card0 #temp-max').text(Math.round(data.main.temp_min) + "°");
+            $('#card0 #temp-min').text(Math.round(data.main.temp_max) + "°");
             $('#card0 #humidity').text(Math.round(data.main.humidity) + "%");
         }).fail((jqXHR, textStatus, errorThrown) => {
             // console.log(jqXHR, textStatus, errorThrown)
@@ -37,6 +37,10 @@ $(()=>{
                 $(`#card${index} img`).attr('src',`http://openweathermap.org/img/wn/${element.weather[0].icon}@4x.png`);
                 $(`#card${index} .headers p`).text(element.weather[0].main);
                 $(`#card${index} h3`).text(Math.round(element.main.temp) + "°");
+                $(`#card${index} #feels-like`).text(Math.round(element.main.feels_like) + "°");
+                $(`#card${index} #temp-max`).text(Math.round(element.main.temp_min) + "°");
+                $(`#card${index} #temp-min`).text(Math.round(element.main.temp_max) + "°");
+                $(`#card${index} #humidity`).text(Math.round(element.main.humidity) + "%");
             });
         }) 
 
