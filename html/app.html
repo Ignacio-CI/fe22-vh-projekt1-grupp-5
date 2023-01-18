@@ -37,37 +37,48 @@
     </nav>
     <h1>Weather App</h1>
 
-  <div id="weather-app">
-    <div id="weather-output">
-      <div class="card-container">
-        <div class="card" id="card0">
-          <img src="../imgs/weather_icon_0.png" alt="">
-          <div class="headers">
-            <h2>--</h2>
-            <p>--</p>
+    <div id="weather-app">
+      <div id="weather-output">
+        <div class="card-container">
+          <div class="card" id="card0">
+            <img src="../imgs/weather_icon_0.png" alt="" />
+            <div class="headers">
+              <h2>--</h2>
+              <p>--</p>
+            </div>
+            <h3>--</h3>
+            <div id="weather-info-container">
+              <h6>Feels like</h6>
+              <h4 id="feels-like">--</h4>
+              <h6>Min temp</h6>
+              <h4 id="temp-max">--</h4>
+              <h6>Max temp</h6>
+              <h4 id="temp-min">--</h4>
+              <h6>Humidity</h6>
+              <h4 id="humidity">--</h4>
+            </div>
           </div>
-          <h3>--</h3>
-
         </div>
       </div>
+      <form>
+        <label for="city-input">City:</label>
+        <input
+          type="text"
+          id="city-input"
+          name="city-input"
+          placeholder="Madrid, London, ..."
+        />
+        <button id="weather-app-btn" type="submit ">Get Weather</button>
+      </form>
     </div>
-    <form>
-      <label for="city-input">City:</label>
-      <input type="text" id="city-input" name="city-input" placeholder="Madrid, London, ..." />
-      <button id="weather-app-btn" type="submit ">Get Weather</button>
-    </form>
-  </div>
-  <footer>
-
-    <p>Grupp 5</p>
-    <h4></h4>
-    <div id="socials">
-      <i class="fa fa-github" style="font-size:30px;"></i>
-      <a href="#" class="fa fa-linkedin"> </a>  
-      <a href="#" class="fa fa-twitter"></a> 
-   </div>
-    
-  </footer>
-</body>
-
+    <footer>
+      <p>Grupp 5</p>
+      <h4></h4>
+      <div id="socials">
+        <i class="fa fa-github" style="font-size: 30px"></i>
+        <a href="#" class="fa fa-linkedin"> </a>
+        <a href="#" class="fa fa-twitter"></a>
+      </div>
+    </footer>
+  </body>
 </html>

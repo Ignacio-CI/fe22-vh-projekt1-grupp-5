@@ -234,6 +234,22 @@ textarea {
   object-fit: contain;
 }
 
+.card #weather-info-container {
+  /* border: 1px solid red; */
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  position: absolute;
+  width: inherit;
+  height: 18%;
+  transform: translateY(80px);
+}
+
+.card #weather-info-container h5 {
+  align-self: flex-start;
+}
+
 @media screen and (min-width: 800px) {
   nav {
     flex-direction: row;

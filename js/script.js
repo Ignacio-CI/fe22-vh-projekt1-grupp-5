@@ -16,7 +16,10 @@ $(()=>{
             $(`#card0 img`).attr('src',`http://openweathermap.org/img/wn/${data.weather[0].icon}@4x.png`);
             $(`#card0 .headers p`).text(data.weather[0].main);
             $(`#card0 h3`).text(Math.round(data.main.temp) + "°");
-            $('#card0 h4').text(Math.round(data.main.feels_like));
+            $('#card0 #feels-like').text(Math.round(data.main.feels_like) + "°");
+            $('#card0 #temp-max').text(Math.round(data.main.temp_max) + "°");
+            $('#card0 #temp-min').text(Math.round(data.main.temp_min) + "°");
+            $('#card0 #humidity').text(Math.round(data.main.humidity) + "%");
         }).fail((jqXHR, textStatus, errorThrown) => {
             // console.log(jqXHR, textStatus, errorThrown)
             alert("City not found. Please enter a valid city name.")
