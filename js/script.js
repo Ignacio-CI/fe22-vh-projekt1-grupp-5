@@ -17,7 +17,7 @@ $(()=>{
             $(`#card0 .headers p`).text(data.weather[0].main);
             $(`#card0 h3`).text(Math.round(data.main.temp) + "°")
         }).fail((jqXHR, textStatus, errorThrown) => {
-            console.log(jqXHR, textStatus, errorThrown)
+            // console.log(jqXHR, textStatus, errorThrown)
             alert("City not found. Please enter a valid city name.")
             return
         });
