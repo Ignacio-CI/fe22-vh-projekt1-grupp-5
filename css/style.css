@@ -85,6 +85,7 @@ label {
   background-color: hsla(0, 0%, 50%, 0.324);
   padding: 10px;
   font-size: 18px;
+  outline: 1px solid black;
 }
 
 button {
@@ -214,7 +215,7 @@ textarea {
 
 .card .headers {
   width: 7rem;
-  transform: translateX(-50px);
+  transform: translateX(-20px);
 }
 
 .card h3 {
@@ -290,10 +291,13 @@ textarea {
   
   /* Home page */
   .container {
-    height: 85vh;
+    height: 50rem;
   }
 
-  
+  .card .headers {
+    width: 7rem;
+    transform: translateX(-50px);
+  }
 
   /* App page */
 
@@ -347,11 +351,6 @@ textarea {
 }
 
 @media screen and (min-width: 1400px) {
-  
-  /* Home page */
-  .container {
-    height: 85vh;
-  }
 
   /* App page */
 
