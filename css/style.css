@@ -383,6 +383,23 @@ button:hover {
   }
 }
 
+form {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+form button {
+  width: 40%;
+  margin-top: 1rem;
+}
+
+form input {
+  margin-top: 1rem;
+  width: 40%;
+}
+
 @media screen and (min-width: 1400px) {
 
   /* App page */
