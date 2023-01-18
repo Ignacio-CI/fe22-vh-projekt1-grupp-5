@@ -242,8 +242,8 @@ textarea {
   justify-content: space-evenly;
   position: absolute;
   width: inherit;
-  height: 18%;
-  transform: translateY(80px);
+  height: 17%;
+  transform: translateY(75px);
 }
 
 .card #weather-info-container h5 {
