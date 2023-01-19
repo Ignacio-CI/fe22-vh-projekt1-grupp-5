@@ -5,8 +5,11 @@
   border: 0;
 }
 
+
+
 body {
   font-family: "Poppins", sans-serif;
+
 }
 
 nav {
@@ -457,4 +460,12 @@ footer p, #socials {
 .fa-twitter {
   background: #55acee;
   color: white;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #333;
+    color: white;
+  }
+
 }

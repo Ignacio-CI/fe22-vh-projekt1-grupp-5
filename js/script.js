@@ -42,7 +42,7 @@ $(()=>{
             $('#card0 #temp-min').text(Math.round(data.list[$('.slider').val()].main.temp_max) + "°");
             $('#card0 #humidity').text(Math.round(data.list[$('.slider').val()].main.humidity) + "%");
             const weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
-
+        
             const d = new Date(data.list[$('.slider').val()].dt_txt);
             let day = weekday[d.getDay()];
 
