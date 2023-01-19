@@ -37,10 +37,12 @@ $(()=>{
 
     $( ".slider" ).change(function() {
         let apiUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${$('#card0 h2').text()}&units=metric&cnt=16&appid=8de34fe193f5396bc8ece49b21d39f05`
+        let apiUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${$('#card0 h2').text()}&units=metric&cnt=16&appid=8de34fe193f5396bc8ece49b21d39f05`
         $.getJSON(apiUrl, { 
         }).done((data) => {
             console.log(data);
             $('#card0 h2').text(data.city.name)
+            $(`#card0 img`).attr('src',`https://openweathermap.org/img/wn/${data.list[$('.slider').val()].weather[0].icon}@4x.png`);
             $(`#card0 img`).attr('src',`https://openweathermap.org/img/wn/${data.list[$('.slider').val()].weather[0].icon}@4x.png`);
             $(`#card0 .headers p`).text(data.list[$('.slider').val()].weather[0].main);
             $(`#card0 h3`).text(Math.round(data.list[$('.slider').val()].main.temp) + "°");
@@ -68,6 +70,7 @@ $(()=>{
             console.log(data);
             country.forEach((element, index) => {
                 $(`#card${index} .headers h2`).text(element.name);
+                $(`#card${index} img`).attr('src',`https://openweathermap.org/img/wn/${element.weather[0].icon}@4x.png`);
                 $(`#card${index} img`).attr('src',`https://openweathermap.org/img/wn/${element.weather[0].icon}@4x.png`);
                 $(`#card${index} .headers p`).text(element.weather[0].main);
                 $(`#card${index} h3`).text(Math.round(element.main.temp) + "°");
