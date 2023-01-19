@@ -37,7 +37,6 @@ $(()=>{
 
     $( ".slider" ).change(function() {
         let apiUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${$('#card0 h2').text()}&units=metric&cnt=16&appid=8de34fe193f5396bc8ece49b21d39f05`
-        let apiUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${$('#card0 h2').text()}&units=metric&cnt=16&appid=8de34fe193f5396bc8ece49b21d39f05`
         $.getJSON(apiUrl, { 
         }).done((data) => {
             console.log(data);
