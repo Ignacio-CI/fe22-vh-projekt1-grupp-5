@@ -4,7 +4,7 @@ Versionhantering - Projekt 1.
 Välkommen till Weather App! Med vår app kan du enkelt få aktuella väderuppgifter för alla städer i världen. För att få reda på vädret, skriv in namnet på staden och tryck på "Get Weather". 
 Funktioner: 
 - Sök efter väderet för en stad
-- Visa aktuell temperatur, "känns som", min och max temperatur och luftfuktighet.
+- Visa aktuell temperatur, luftfuktighet och väderförhållanden.
 
 Teknologier:
 - HTML, CSS, Javascript (jQuery)
