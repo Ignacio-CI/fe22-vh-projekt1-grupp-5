@@ -1,5 +1,6 @@
 # fe22-vh-projekt1-grupp-5
-Versionhantering - Projekt 1
+Versionhantering - Projekt 1.
+
 Välkommen till Weather App! Med vår app kan du enkelt få aktuella väderuppgifter för alla städer i världen. För att få reda på vädret, skriv in namnet på staden och tryck på "Get Weather". 
 Funktioner: 
 - Sök efter väderet för en stad
