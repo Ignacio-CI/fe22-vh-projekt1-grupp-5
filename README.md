@@ -15,3 +15,11 @@ Användning:
 2. Skriv in namnet på en stad i sökrutan.
 3. Tryck på "Get Weather".
 4. Använd slidern för att se vädret under dagen/dagarna.
+
+Det här arbetet har varit ett grupparbete i versionshantering, med fokus på att lära sig jobba i grupp. 
+I det här arbetet har vi delat upp ansvaret i den här ordningen:
+- Viktor, jQuery - CSS - HTML
+- Robin, jQuery - HTML
+- Ignacio, HTML - CSS - Responsive Design - jQuery
+- Anton, HTML - CSS
+- Hampus, Gruppledare - CSS - Responsive Design
